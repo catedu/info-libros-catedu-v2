@@ -18,7 +18,7 @@ export default function Header() {
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
-            href="/"
+            href="https://moodle.catedu.es"
           >
             <img src={Logo} style={{ width: 130 }} />
           </IconButton>
