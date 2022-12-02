@@ -50,7 +50,7 @@ export default function CourseCard({ course }) {
               <Chip
                 color="primary"
                 label={category}
-                style={{ minWidth: '100px' }}
+                style={{ minWidth: '100px', maxWidth:'150px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', direction: 'rtl', textAlign: 'left' }}
               />
             </Box>
           </Stack>
