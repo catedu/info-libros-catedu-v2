@@ -21,7 +21,9 @@ export default function CourseCard({ course }) {
     Moodle_url: url,
   } = course
   return (
-    <Card sx={{ minHeight: '100%' }}>
+    <Card
+      sx={{ minHeight: '100%', position: 'relative', paddingBottom: '40px' }}
+    >
       <CardMedia
         component="img"
         height="140"
@@ -55,7 +57,7 @@ export default function CourseCard({ course }) {
             </Box>
           </Stack>
         </CardContent>
-        <CardActions>
+        <CardActions style={{ position: 'absolute', bottom: '0px' }}>
           <Stack
             direction="row"
             spacing={2}
