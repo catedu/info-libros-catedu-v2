@@ -25,3 +25,23 @@ npm run deploy
 ```
 
 - Hacer despliegue
+
+## Despliegue actualizando datos
+
+
+> 🚧 **Sólo la primera vez:**
+>
+>```python
+>python3 -m venv venv
+>source venv/bin/activate
+>pip install -r requirements.txt
+>```
+>
+
+Con las dependencias python instaladas, ejecutar:
+
+```bash
+source venv/bin/activate
+make updatedeploy
+deactivate
+```
