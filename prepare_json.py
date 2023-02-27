@@ -73,7 +73,7 @@ df1 = df.filter(regex="\d\.\d").fillna("").astype(str)
 #     .str.replace("nan", "")
 # )
 
-df = df[(df["Curso Escolar"] == "2022-23") & (df["Convocatoria"] == 1)]
+df = df[(df["Curso Escolar"] == "2022-23") & ((df["Convocatoria"] == 1) | (df["Convocatoria"] == 2))]
 
 # df['Course_id'] = df['Moodle_url'].apply(lambda x: x.split('/')[-1].split('=')[-1])
 final_df = pd.concat([df[
