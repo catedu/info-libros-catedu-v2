@@ -154,7 +154,7 @@ export default function CoursesView() {
               {areasAndLevels.map((areaAndLevel) => (
                 <MenuItem
                   disabled={
-                    areaAndLevel.indexOf('Nivel B2') !== -1 ||
+                    // areaAndLevel.indexOf('Nivel B2') !== -1 ||
                     areaAndLevel.indexOf('Nivel C1') !== -1 ||
                     areaAndLevel.indexOf('Nivel C2') !== -1
                   }
