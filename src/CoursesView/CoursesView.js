@@ -15,6 +15,7 @@ import removeDiacritics from '../data/removeDiacritics'
 import Checkbox from '@mui/material/Checkbox'
 import Chip from '@mui/material/Chip'
 import Competencias from 'Competencias'
+import Typography from '@mui/material/Typography'
 
 const ITEM_HEIGHT = 48
 const ITEM_PADDING_TOP = 8
@@ -107,6 +108,12 @@ export default function CoursesView() {
 
   return (
     <>
+        {/* Insert a little closable banner  that sais: "El reconocimiento de estas competencias estará sujeta a las posibles modificaciones derivadas de variaciones en el desarrollo de la actividad" */}
+      <Box sx={{ flexGrow: 1 }}>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="white" bgcolor="#FC2947" align="center">
+        El reconocimiento de estas competencias estará sujeto a las posibles modificaciones derivadas de variaciones en el desarrollo de la actividad
+        </Typography>
+      </Box>
       <Box sx={{ maxWidth: '600px' }}>
         <Stack spacing={2}>
           <Autocomplete
